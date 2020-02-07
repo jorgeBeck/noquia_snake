@@ -1,0 +1,47 @@
+
+:root {
+  --screen-pixel-size: 16px;
+  --pixel-empty-bg-color: #EEEEEE;
+  --pixel-empty-border-color: #DDDDDD;
+  --pixel-snake-present-border-color: #333333;
+  --pixel-snake-present-bg-color: #111111;
+  --pixel-snake-head-present-bg-color: #994444;
+}
+body {
+  margin: 0;
+  background-color: #555;
+}
+#app {
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+#screen {
+  border: solid 20px #c99dec;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.layer {
+  display: flex;
+  justify-content: center;
+}
+.pixel {
+  background-color: var(--pixel-empty-bg-color);
+  border: solid 1px var(--pixel-empty-border-color);
+  /* display: inline-block; */
+  /* margin: 1px; */
+  width: var(--screen-pixel-size);
+  height: var(--screen-pixel-size);
+}
+
+.pixel-snake-present {
+  background-color: var(--pixel-snake-present-border-color);
+  border: solid 1px var(--pixel-snake-present-bg-color);
+}
+
+.pixel-snake-head-present {
+  background-color: var(--pixel-snake-head-present-bg-color);
+  border: solid 1px var(--pixel-snake-present-bg-color);
+}
